@@ -1,0 +1,88 @@
+﻿
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'vazir';
+}
+body{
+    direction: rtl;
+    height: 100vh;
+}
+
+.editor-menu{
+    width: 100%;
+    height: 6rem;
+    padding: 18px;
+    background: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.btn{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #006600;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 5px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    background: #c00143;
+}
+.live{
+    font-size: 1.6rem;
+    border: 2px solid #c00143;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c00143;
+    border-radius: 5px;
+    accent-color: #000;
+    color: #eee;
+}
+.live *{
+    cursor: pointer;
+}
+.container{
+    position: absolute;
+    top: 6rem;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    direction: ltr;
+
+}
+.left, 
+.right{
+height: 100%;
+width: 50%;
+border: 1px solid #c00143;
+}
+.bar{
+    width: 3px;
+    height:100%;
+    background: #c00143;
+    cursor: w-resize;
+}
+.editor{
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    padding: 1rem 0 0 1rem;
+    outline: none;
+}
+.iframe{
+    padding: 5px;
+    white-space: pre;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}

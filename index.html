@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>کد ادیتور</title>
+</head>
+<body>
+    
+    <div class="editor-menu">
+        <button class="btn btn-dark">تاریک</button>
+        <button class="btn btn-light">روشن</button>
+        <button class="btn btn-run"><i class="fa fa-play"></i>اجرا</button>
+        <div class="live">
+            <label for="live">زنده</label>
+            <input id="live" type="checkbox">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="left">
+            <div class="editor" contenteditable="">
+                   سلام دنیا
+            </div>
+        </div>
+        <div class="bar"></div>
+        <div class="right">
+            <iframe src="" frameborder="0" class="iframe"></iframe>
+        </div>
+    </div>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
